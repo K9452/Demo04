@@ -14,6 +14,7 @@ namespace ElevatorApplication
         private int kerros;
         public int Kerros
         {
+            //annetaan min arvot
             get
             {
                 return kerros;
