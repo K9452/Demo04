@@ -21,20 +21,25 @@ namespace VolumeApplication
             }
             set
             {
-                if             
-                {
-                    volume = MinVolume;
-                    Console.WriteLine("Too low volume - Amplifier volume is set to minimum :" + Voluumi);
-                   
+                if (value < MinVolume || value > MaxVolume)
 
-                }
-                if else
                 {
-                    volume = MaxVolume;
-                    Console.WriteLine("Too much volume - Amplifier volume is set to minimum :" + Voluumi);
+                    if (value > MaxVolume)
+                    {
+                        volume = MaxVolume;
+                        Console.WriteLine("Too much volume -  Amplifier volume is set to maximum :" + volume);
+                    }
+                    else
+                    {
+                        volume = MinVolume;
+                        Console.WriteLine("Too low volume -  Amplifier volume is set to minimum :" + volume);
+                    }
                 }
-               
-                
+                else
+                {
+                    volume = value;
+                }
+
             }
         }
     }
