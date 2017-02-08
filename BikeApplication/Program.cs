@@ -16,7 +16,7 @@ namespace BikeApplication
             Boat boat1 = new Boat(" Yamaha ",  "S900 ", 1990 , " Matte BLack ", 3, " Militaryboat ");
             Boat boat2 = new Boat(" Yamaha ", " 1000 ", 2010 , " Yellow ", 3, " Motorboat ");
 
-            //Tulostetaan tiedot kaikista
+            //Tulostetaan tiedot kaikistaa
             Console.WriteLine("Bike info \n" + bike1);
             Console.WriteLine("Bike2 info \n" + bike2);
             Console.WriteLine("Boat info \n" + boat1);
