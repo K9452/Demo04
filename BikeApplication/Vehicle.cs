@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace BikeApplication
 {
+    //tehdään public class
     public class Vehicle
     {
         public string Nimi { get; set; }
